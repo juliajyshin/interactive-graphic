@@ -1,0 +1,479 @@
+/*rollover elements*/
+
+.hd {
+  position: relative;
+}
+
+.hd .smartHomeIG {
+  width: 100%;
+}
+
+.divPlus {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  position: absolute;
+  clear: left;
+}
+
+.divPlus:hover {
+  cursor: pointer;
+}
+
+.plusX {
+  -webkit-transform: rotate(45deg) scale(1.5);
+  -moz-transform: rotate(45deg) scale(1.5);
+  -ms-transform: rotate(45deg) scale(1.5);
+  -o-transform: rotate(45deg) scale(1.5);
+  /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9914448613738104, M12=-0.13052619222005157, M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+  zoom: 1;
+  z-index: 7;
+}
+
+.hd .adc-circle-plus:hover {
+  cursor: pointer;
+}
+
+.dbSideText {
+  animation: animatedBackground 250s linear infinite;
+  -moz-animation: animatedBackground 250s linear infinite;
+  -webkit-animation: animatedBackground 250s linear infinite;
+  -ms-animation: animatedBackground 250s linear infinite;
+  -o-animation: animatedBackground 250s linear infinite;
+}
+
+.hd .descBlock {
+  position: absolute;
+  border: 3px solid #80d8ff;
+  padding: 20px;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  max-width: 400px;
+  display: none;
+  z-index: 6;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hd .descBlock .dbClose {
+  color: #80d8ff;
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  transition: .2s;
+}
+
+.hd .descBlock .dbClose:hover {
+  font-size: 22px;
+}
+
+.dbColumn {
+  width: 60%;
+  float: right;
+  padding-left: 10px;
+}
+
+.hd .descBlock .dbIcon {
+  float: left;
+  width: 35%;
+}
+
+.hd .descBlock .dbIcon img {
+  width: 100%;
+}
+
+.hd .descBlock .dbTitle {
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hd .descBlock .dbContent {
+  line-height: 20px;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.hd .descBlock .dbClose:hover {
+  cursor: pointer;
+}
+
+.adc-circle-plus:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  z-index: 1;
+  top: 4px;
+  left: 3px;
+  position: absolute;
+  transition: .2s;
+}
+
+.adc-circle-plus.plusActive:after {
+  width: 23px;
+  height: 23px;
+}
+
+.adc-circle-plus:before {
+  z-index: 5;
+  position: absolute;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.orangeText {
+  color: #000;
+}
+
+.orangeText.textCenter {
+  font-size: 36px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.divDivider {
+  border-bottom: 3px solid #e4701e;
+  width: 10%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.absoluteContent {
+  position: absolute;
+}
+
+.orangeText.orangeCenter {
+  text-align: center;
+}
+
+.orangeText.orangeCenter:after {
+  left: 35%;
+}
+
+.container.homeSolutionsHouse {
+  margin: 0;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .container.homeSolutionsHouse {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container.homeSolutionsHouse {
+    width: 800px;
+    margin-left: 1%;
+  }
+  .hd .divPlus.door-bell-camera {
+    top: 68%;
+    left: 43%;
+  }
+  .hd .descBlock.doorBellCamera {
+    top: 39%;
+    left: 2%;
+  }
+  .hd .divPlus.smart-lock {
+    top: 78%;
+    left: 52.5%;
+  }
+  .hd .descBlock.smartLock {
+    top: 47%;
+    left: 5%;
+  }
+  .hd .divPlus.security-panel {
+    top: 59.5%;
+    left: 18.2%;
+  }
+  .hd .descBlock.securityPanel {
+    /* top: 37%;
+    left: 12.7%; */
+    top: 57%;
+    left: 16.8%;
+  }
+  .hd .divPlus.smart-thermostat {
+    top: 49.5%;
+    left: 61.8%;
+  }
+  .hd .descBlock.smartThermostat {
+    top: 33%;
+    left: 47.5%;
+  }
+  .hd .divPlus.lighting-sensor {
+    top: 29%;
+    left: 29.5%;
+  }
+  .hd .descBlock.lightingSensor {
+    top: 25.5%;
+    left: 28.5%;
+  }
+  .hd .divPlus.smoke-detector {
+    top: 34%;
+    left: 45.6%;
+  }
+  .hd .descBlock.smokeDetector {
+    top: 34%;
+    left: 56%;
+  }
+  .hd .divPlus.garage-door {
+    top: 60.4%;
+    left: 78%;
+  }
+  .hd .descBlock.garageDoor {
+    top: 12.2%;
+    left: 49%;
+  }
+  .hd .divPlus.blank-one {
+    top: 9%;
+    left: 29%;
+  }
+  .hd .descBlock.blankOne {
+    top: 6.2%;
+    left: 28%;
+  }
+  .hd .divPlus.blank-two {
+    top: 23%;
+    left: 69%;
+  }
+  .hd .descBlock.blankTwo {
+    top: 20%;
+    left: 27%;
+  }
+  .hd .divPlus.blank-three {
+    top: 10%;
+    left: 52%;
+  }
+  .hd .descBlock.blankThree {
+    top: 6%;
+    left: 51%;
+  }
+}
+
+@media (min-width: 850px) {
+  .container.homeSolutionsHouse {
+    width: 900px;
+    margin-left: 7%;
+  }
+  .hd .descBlock.doorBellCamera {
+    top: 39%;
+    left: 2%;
+  }
+  .hd .descBlock.smartLock {
+    top: 47%;
+    left: 5%;
+  }
+  .hd .descBlock.garageDoor {
+    top: 12.2%;
+    left: 49.8%;
+  }
+}
+
+@media (min-width: 950px) {
+  .container.homeSolutionsHouse {
+    width: 950px;
+    margin-left: 12%;
+  }
+}
+
+@media (min-width: 991px) {
+  .container.homeSolutionsHouse {
+    width: 991px;
+    margin-left: 0%;
+  }
+  .hd .descBlock.doorBellCamera {
+    top: 48%;
+    left: 3%;
+  }
+  .hd .descBlock.smartLock {
+    top: 58%;
+    left: 12%;
+  }
+  .hd .descBlock.securityPanel {
+    top: 41%;
+    left: 16.7%;
+  }
+  .hd .descBlock.smartThermostat {
+    top: 46%;
+    left: 19.5%;
+  }
+  .hd .descBlock.garageDoor {
+    top: 36.2%;
+    left: 37.8%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container.homeSolutionsHouse {
+    width: 991px;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1030px) {
+  .container.homeSolutionsHouse {
+    margin-left: 3%;
+  }
+  .hd .descBlock.doorBellCamera {
+    top: 50%;
+    left: 2%;
+  }
+  .hd .descBlock.smartLock {
+    top: 56%;
+    left: 5%;
+  }
+  .hd .descBlock.securityPanel {
+    top: 45%;
+    left: 12.8%;
+  }
+  .hd .descBlock.smartThermostat {
+    top: 42%;
+    left: 47.5%;
+  }
+  .hd .descBlock.lightingSensor {
+    top: 37.5%;
+    left: 7.5%;
+  }
+  .hd .descBlock.smokeDetector {
+    top: 33%;
+    left: 56%;
+  }
+  .hd .descBlock.garageDoor {
+    top: 26.2%;
+    left: 58.8%;
+  }
+}
+
+@media (min-width: 1090px) {
+  .container.homeSolutionsHouse {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container.homeSolutionsHouse {
+    width: 1000px;
+    margin-left: 7%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container.homeSolutionsHouse {
+    width: 1200px;
+    margin-left: 0;
+  }
+  .hd .divPlus.door-bell-camera {
+    top: 68%;
+    left: 43%;
+  }
+  .hd .descBlock.doorBellCamera {
+    top: 54%;
+    left: 11%;
+  }
+  .hd .divPlus.smart-lock {
+    top: 78%;
+    left: 52.5%;
+  }
+  .hd .descBlock.smartLock {
+    top: 65%;
+    left: 21%;
+  }
+  .hd .divPlus.security-panel {
+    top: 59.5%;
+    left: 18.2%;
+  }
+  .hd .descBlock.securityPanel {
+    top: 57%;
+    left: 17%;
+  }
+  .hd .divPlus.smart-thermostat {
+    top: 49.5%;
+    left: 61.8%;
+  }
+  .hd .descBlock.smartThermostat {
+    top: 35%;
+    left: 59.5%;
+  }
+  .hd .divPlus.garage-door {
+    top: 60.4%;
+    left: 78%;
+  }
+  .hd .descBlock.garageDoor {
+    top: 44.2%;
+    left: 45.8%;
+  }
+  .hd .divPlus.lighting-sensor {
+    top: 29%;
+    left: 29.5%;
+  }
+  .hd .descBlock.lightingSensor {
+    top: 26.5%;
+    left: 28.5%;
+  }
+  .hd .divPlus.smoke-detector {
+    top: 34%;
+    left: 45.6%;
+  }
+  .hd .descBlock.smokeDetector {
+    top: 32%;
+    left: 44%;
+  }
+  .hd .divPlus.blank-one {
+    top: 9%;
+    left: 29%;
+  }
+  .hd .descBlock.blankOne {
+    left: 28%;
+    top: 7%;
+  }
+  .hd .divPlus.blank-two {
+    top: 23%;
+    left: 69%;
+  }
+  .hd .descBlock.blankTwo {
+    top: 20%;
+    left: 36%;
+  }
+  .hd .divPlus.blank-three {
+    top: 10%;
+    left: 52%;
+  }
+  .hd .descBlock.blankThree {
+    top: 8%;
+    left: 51%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container.homeSolutionsHouse {
+    width: 100%;
+    margin-left: 0;
+  }
+}
